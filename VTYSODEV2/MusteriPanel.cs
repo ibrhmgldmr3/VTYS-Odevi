@@ -219,14 +219,17 @@ namespace VTYSODEV2
                     MessageBox.Show("Hata: " + ex.Message);
                 }
             }
+            airButton2_Click(sender, e);
+
         }
 
         private void airButton9_Click(object sender, EventArgs e)
         {
-            using (var conn = new NpgsqlConnection(baglanti))
-            {
                 try
                 {
+            using (var conn = new NpgsqlConnection(baglanti))
+            {
+                
                     conn.Open();
 
                     using (var cmd = new NpgsqlCommand("call para_yatir(@doviz_hesap_id, @yatirilan_miktar)", conn))
@@ -238,11 +241,13 @@ namespace VTYSODEV2
                         var result = cmd.ExecuteScalar();
                     }
                 }
-                catch (Exception ex)
+            
+            }    catch (Exception ex)
                 {
                     MessageBox.Show("Hata: " + ex.Message);
                 }
-            }
+            airButton2_Click(sender, e);
+
         }
 
         private void airButton1_Click(object sender, EventArgs e)

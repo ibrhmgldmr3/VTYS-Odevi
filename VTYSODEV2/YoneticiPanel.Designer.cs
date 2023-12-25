@@ -97,6 +97,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Ymusterisilme = new ReaLTaiizor.Controls.AirButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.comboBoxEdit1 = new ReaLTaiizor.Controls.ComboBoxEdit();
             this.airTabPage1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -284,7 +285,7 @@
             this.spaceBorderLabel1.NoRounding = false;
             this.spaceBorderLabel1.Size = new System.Drawing.Size(156, 40);
             this.spaceBorderLabel1.TabIndex = 40;
-            this.spaceBorderLabel1.Text = "Doviz ID Giriniz";
+            this.spaceBorderLabel1.Text = "Doviz Adını Giriniz";
             this.spaceBorderLabel1.Transparent = false;
             // 
             // aloneTextBox1
@@ -441,6 +442,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.comboBoxEdit1);
             this.tabPage2.Controls.Add(this.spaceBorderLabel3);
             this.tabPage2.Controls.Add(this.aloneTextBox3);
             this.tabPage2.Controls.Add(this.airButton1);
@@ -1139,6 +1141,29 @@
             this.tabPage3.Size = new System.Drawing.Size(1146, 693);
             this.tabPage3.TabIndex = 2;
             // 
+            // comboBoxEdit1
+            // 
+            this.comboBoxEdit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.comboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxEdit1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEdit1.DropDownHeight = 100;
+            this.comboBoxEdit1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEdit1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxEdit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
+            this.comboBoxEdit1.FormattingEnabled = true;
+            this.comboBoxEdit1.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.comboBoxEdit1.IntegralHeight = false;
+            this.comboBoxEdit1.ItemHeight = 20;
+            this.comboBoxEdit1.Items.AddRange(new object[] {
+            "Bireysel",
+            "Kurumsal"});
+            this.comboBoxEdit1.Location = new System.Drawing.Point(954, 545);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Size = new System.Drawing.Size(135, 26);
+            this.comboBoxEdit1.StartIndex = 0;
+            this.comboBoxEdit1.TabIndex = 92;
+            this.comboBoxEdit1.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit1_SelectedIndexChanged);
+            // 
             // YoneticiPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1231,5 +1256,6 @@
         private ReaLTaiizor.Controls.AirButton airButton1;
         private ReaLTaiizor.Controls.SpaceBorderLabel spaceBorderLabel3;
         private ReaLTaiizor.Controls.AloneTextBox aloneTextBox3;
+        private ReaLTaiizor.Controls.ComboBoxEdit comboBoxEdit1;
     }
 }

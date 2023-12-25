@@ -83,9 +83,9 @@
             this.lostSeparator2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.lostSeparator2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
             this.lostSeparator2.Horizontal = false;
-            this.lostSeparator2.Location = new System.Drawing.Point(753, 312);
+            this.lostSeparator2.Location = new System.Drawing.Point(709, 312);
             this.lostSeparator2.Name = "lostSeparator2";
-            this.lostSeparator2.Size = new System.Drawing.Size(512, 18);
+            this.lostSeparator2.Size = new System.Drawing.Size(556, 18);
             this.lostSeparator2.TabIndex = 156;
             this.lostSeparator2.Text = "lostSeparator2";
             // 
@@ -416,7 +416,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(16, 32);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(731, 351);
+            this.dataGridView2.Size = new System.Drawing.Size(687, 351);
             this.dataGridView2.TabIndex = 132;
             this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
             // 
